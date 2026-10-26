@@ -1,0 +1,984 @@
+body {
+  background: #252525;
+  font-family: "Halvar Mittelschrift", Arial, sans-serif;
+}
+
+.site {
+  width: 1498px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+section,
+header {
+  position: relative;
+  width: 1498px;
+  overflow: hidden;
+}
+
+.section-white {
+  background: #f9f9f9;
+  color: #000;
+}
+
+.section-black {
+  background: #000;
+  color: #00ff11;
+}
+
+.section-heading {
+  position: absolute;
+  font-size: 160px;
+  line-height: 1.05;
+  font-weight: 900;
+  font-style: italic;
+  letter-spacing: -5px;
+  white-space: nowrap;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Общие настройки декоративных полосок */
+
+.title-lines span,
+.history .title-lines span,
+.history-accent,
+.history-accent-left::before,
+.details-title-lines span,
+.pit-lines-right span,
+.finish-heading-lines span {
+  height: 13px;
+  border-radius: 999px;
+}
+
+/* 00 / Первый экран */
+
+.hero {
+  height: 1021px;
+  background: #000;
+  color: white;
+}
+
+.hero-eyebrow {
+  font-family: "Halvar Mittelschrift";
+  font-weight: 100;
+  position: absolute;
+  left: 50px;
+  top: 112px;
+  color: #00ff11;
+  font-size: 28px;
+  letter-spacing: 23px;
+  white-space: nowrap;
+}
+
+.hero-car {
+  position: absolute;
+  left: 1190px;
+  top: 55px;
+  width: 250px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.hero-title {
+  position: absolute;
+  right: -115px;
+  top: 160px;
+  width: 1750px;
+  height: auto;
+}
+
+.hero-family {
+  font-family: "Halvar Mittelschrift";
+  font-weight: 300;
+  position: absolute;
+  top: 450px;
+  left: 50px;
+  color: #00ff11;
+  font-size: 40px;
+  letter-spacing: 23px;
+}
+
+.hero-subtitle {
+  font-family: "Halvar Mittelschrift";
+  font-weight: 700;
+  position: absolute;
+  top: 441px;
+  right: 24px;
+  color: #00ff11;
+  font-size: 80px;
+  letter-spacing: 5px;
+}
+
+.hero-numbers {
+  position: absolute;
+  top: 508px;
+  left: 160px;
+  right: 155px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 282px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.hero-finish {
+  position: absolute;
+  left: 0;
+  bottom: 40px;
+  width: 100%;
+  height: 189px;
+  display: block;
+}
+
+/* Текст поверх SVG-плашки: каждое слово — своё начертание */
+
+.hero-finish-text {
+  position: absolute;
+  left: 50%;
+  bottom: 75px;
+  transform: translateX(-50%);
+  z-index: 5;
+  color: black;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.hero-finish-text p {
+  margin: 0;
+  font-family: "Halvar Mittelschrift";
+  font-weight: 300;
+  font-size: 60px;
+}
+
+.hero-finish-text b {
+  font-weight: 700;
+}
+
+.hero-finish-text em {
+  font-weight: 250;
+  font-style: normal;
+}
+
+.hero-finish-text strong {
+  font-weight: 900;
+}
+
+.hero-finish-text span {
+  display: block;
+  font-family: "Halvar Mittelschrift";
+  font-style: oblique;
+  font-size: 60px;
+  margin-top: -3px;
+  font-weight: 900;
+  letter-spacing: 12px;
+}
+
+/* Общий элемент: вертикальная навигация 01–05 */
+
+.progress {
+  position: absolute;
+  z-index: 4;
+  left: 62px;
+  top: 240px;
+  width: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 71px;
+}
+
+.progress::before {
+  position: absolute;
+  content: "";
+  z-index: -1;
+  left: 11px;
+  top: 15px;
+  height: 405px;
+  width: 3px;
+  background: currentColor;
+  border-radius: 999px;
+}
+
+.progress span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+  font-size: 11px;
+  font-weight: bold;
+  border-radius: 100%;
+  line-height: 1;
+  padding-top: 2px;
+  box-sizing: border-box;
+}
+
+.progress-dark {
+  color: #000;
+}
+
+.progress-dark span {
+  background: #000;
+  color: #fff;
+}
+
+.progress-neon {
+  color: #00ff11;
+}
+
+.progress-neon span {
+  background: #00ff11;
+  color: #000;
+}
+
+.progress .active {
+  background: #fd3416;
+  color: white;
+  width: 25px;
+  height: 25px;
+  transform: scale(2);
+}
+
+/* 01 / История */
+
+.history {
+  height: 1081px;
+}
+
+.history-heading {
+  top: 43px;
+  transform: translateX(-50%);
+}
+
+.history .title-lines {
+  position: absolute;
+  top: 122px;
+  width: 220px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.history .title-lines span {
+  display: block;
+  background: #000;
+}
+
+/* слева */
+.history .title-lines-left {
+  left: 80px;
+  top: 80px;
+}
+
+.history .title-lines-left span:first-child {
+  width: 170px;
+  align-self: flex-start;
+}
+
+.history .title-lines-left span:last-child {
+  width: 110px;
+  align-self: flex-end;
+}
+
+/* справа */
+.history .title-lines-right {
+  right: 70px;
+  top: 170px;
+  gap: 30px;
+}
+
+.history .title-lines-right span:first-child {
+  width: 110px;
+  align-self: flex-start;
+}
+
+.history .title-lines-right span:last-child {
+  width: 350px;
+  align-self: flex-end;
+}
+
+.history .progress {
+  top: 245px;
+}
+
+.history-year {
+  position: absolute;
+  top: 190px;
+  left: 200px;
+  font-size: 350px;
+  font-style: italic;
+  font-weight: 900;
+  line-height: 1;
+  color: #fd3416;
+  -webkit-text-stroke: 15px black;
+  paint-order: stroke fill;
+  letter-spacing: 2px;
+}
+
+.history-description {
+  position: absolute;
+  top: 325px;
+  right: 42px;
+  width: 500px;
+  text-align: right;
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.34;
+}
+
+.history-car {
+  position: absolute;
+  top: 565px;
+  left: 340px;
+  width: 565px;
+  height: 225px;
+  object-fit: contain;
+  image-rendering: pixelated;
+}
+
+.history-accent {
+  position: absolute;
+  background: #fd3416;
+}
+
+.history-accent-left {
+  left: 90px;
+  top: 758px;
+  width: 850px;
+}
+
+.history-accent-left::before {
+  content: "";
+  position: absolute;
+  right: 650px;
+  top: -50px;
+  width: 170px;
+  background: #fd3416;
+}
+
+.history-accent-right {
+  right: 102px;
+  top: 756px;
+  width: 290px;
+}
+
+.history-halvar {
+  position: absolute;
+  left: 70px;
+  right: 0;
+  top: 814px;
+  height: 172px;
+  background: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 5.8% 100%);
+}
+
+/* Три разных начертания в чёрной плашке */
+.history-halvar span {
+  font-family: "Halvar Mittelschrift";
+  position: relative;
+  font-style: oblique;
+  left: 30px;
+  top: 10px;
+}
+
+.history-halvar span:nth-child(1) {
+  font-weight: 250;
+  font-size: 112px;
+}
+
+.history-halvar span:nth-child(2) {
+  color: #fd3416;
+  font-weight: 500;
+  font-size: 126.54px;
+}
+
+.history-halvar span:nth-child(3) {
+  color: #00ff11;
+  font-weight: 900;
+  font-size: 133.59px;
+}
+
+/* 02 / Соперники */
+
+.rivals {
+  height: 1037px;
+}
+
+.accent-double {
+  position: absolute;
+  left: 30px;
+  top: 90px;
+  width: 135px;
+  height: 70px;
+  border-top: 13px solid transparent;
+  border-bottom: 13px solid transparent;
+}
+
+.accent-double::before {
+  content: "";
+  position: absolute;
+  top: -13px;
+  left: 80px;
+  width: 80px;
+  height: 13px;
+  background: #00ff11;
+  border-radius: 999px;
+}
+
+.accent-double::after {
+  content: "";
+  position: absolute;
+  bottom: -13px;
+  left: 0;
+  width: 160px;
+  height: 13px;
+  background: #00ff11;
+  border-radius: 999px;
+}
+
+/* Верхняя зелёная полоска справа */
+
+.rivals-line-right-top {
+  position: absolute;
+  top: 130px;
+  right: 30px;
+  width: 150px;
+  height: 13px;
+  background: #00ff11;
+  border-radius: 999px;
+}
+
+/* Нижняя зелёная полоска справа */
+
+.rivals-line-right-bottom {
+  position: absolute;
+  top: 175px;
+  right: 80px;
+  width: 115px;
+  height: 13px;
+  background: #00ff11;
+  border-radius: 999px;
+}
+
+.rivals-heading {
+  top: 43px;
+  color: #00ff11;
+}
+
+.rivals .progress {
+  top: 295px;
+}
+
+.rivals-table {
+  position: absolute;
+  left: 189px;
+  right: 70px;
+  top: 265px;
+  border-top: 4px solid #00ff11;
+}
+
+.rivals-row {
+  height: 85px;
+  display: grid;
+  grid-template-columns: 100px 395px auto;
+  border-bottom: 4px solid #00ff11;
+  align-items: center;
+  color: #00ff11;
+  font-size: 60px;
+}
+
+.rivals-row b {
+  font-weight: 700;
+  padding-left: 15px;
+}
+
+.rivals-row p {
+  border-left: 4px solid #00ff11;
+  padding-left: 80px;
+}
+
+/* Семь начертаний Halvar в таблице «Соперники» */
+/* 01 — Hairline */
+.rivals-row:nth-child(1) span,
+.rivals-row:nth-child(1) p {
+  font-weight: 100;
+}
+
+/* 02 — ExtraThin */
+.rivals-row:nth-child(2) span,
+.rivals-row:nth-child(2) p {
+  font-weight: 200;
+}
+
+/* 03 — Thin */
+.rivals-row:nth-child(3) span,
+.rivals-row:nth-child(3) p {
+  font-weight: 250;
+}
+
+/* 04 — Light */
+.rivals-row:nth-child(4) span,
+.rivals-row:nth-child(4) p {
+  font-weight: 300;
+}
+
+/* 05 — Regular */
+.rivals-row:nth-child(5) span,
+.rivals-row:nth-child(5) p {
+  font-weight: 400;
+}
+
+/* 06 — Bold */
+.rivals-row:nth-child(6) span,
+.rivals-row:nth-child(6) p {
+  font-weight: 700;
+}
+
+/* 07 — Black */
+.rivals-row:nth-child(7) span,
+.rivals-row:nth-child(7) p {
+  font-weight: 900;
+}
+
+.checkered-rivals {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 110px;
+  background-image: url("../изображения/chekerboard.svg");
+  background-size: 100% 110%;
+  background-position: center top;
+}
+
+/* 03 / Детали на повороте */
+
+.details {
+  height: 1651px;
+}
+
+.details-heading {
+  top: 43px;
+  line-height: 1.0;
+}
+
+.details-heading span {
+  display: inline-block;
+  margin-left: 0px;
+}
+
+.details-title-lines {
+  position: absolute;
+  left: 37px;
+  top: 250px;
+  width: 130px;
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+}
+
+.details-title-lines span {
+  background: black;
+  width: 200px;
+}
+
+.details-title-lines span:last-child {
+  width: 130px;
+}
+
+/* Правые полоски в разделе 03 */
+
+.details-title-lines-right {
+  left: auto;
+  right: 37px;
+  top: 110px;
+  align-items: flex-end;
+}
+
+.details-title-lines-right span:first-child {
+  width: 90px;
+}
+
+.details-title-lines-right span:last-child {
+  width: 130px;
+}
+
+/* Вторая правая полоска */
+
+.details-title-lines-right span:nth-child(2) {
+  width: 130px;
+}
+
+/* Третья длинная полоска */
+
+.details-title-lines-right span:nth-child(3) {
+  width: 350px;
+  margin-top: 20px;
+  position: relative;
+  right: 150px;
+}
+
+.detail-grid {
+  position: absolute;
+  top: 409px;
+  left: 30px;
+  width: 1438px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 23px 27px;
+}
+
+.detail-card {
+  height: 552px;
+  position: relative;
+  overflow: hidden;
+  padding: 0;
+}
+
+.detail-gif {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+.detail-red {
+  background: #fd3416;
+  color: white;
+}
+
+.detail-green {
+  background: #00ff11;
+  color: black;
+}
+
+.detail-icon {
+  position: absolute;
+  top: 8px;
+  left: 18px;
+  font-size: 83px;
+  line-height: 1;
+}
+
+.detail-icon.right {
+  left: auto;
+  right: 24px;
+}
+
+.detail-flag {
+  position: absolute;
+  top: 12px;
+  right: 30px;
+  font-size: 62px;
+}
+
+.detail-flag.bottom {
+  top: auto;
+  bottom: 14px;
+  left: 25px;
+  right: auto;
+}
+
+.detail-card:last-child .detail-flag {
+  right: auto;
+  left: 25px;
+}
+
+.detail-symbol {
+  position: absolute;
+  top: 33px;
+  left: 125px;
+  font-size: 445px;
+  line-height: 1.15;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.detail-and {
+  left: 97px;
+  top: -5px;
+  font-size: 485px;
+  font-weight: 300;
+}
+
+.detail-a {
+  left: 210px;
+  top: -10px;
+  font-size: 455px;
+  font-weight: 700;
+}
+
+.detail-arrow {
+  position: absolute;
+  bottom: 2px;
+  right: 25px;
+  font-size: 94px;
+  font-weight: 900;
+  letter-spacing: -14px;
+}
+
+.detail-arrow.left {
+  right: auto;
+  left: 27px;
+}
+
+/* 04 / Пит-стоп */
+
+.pitstop {
+  height: 1043px;
+}
+
+.pit-heading {
+  top: 43px;
+  color: #00ff11;
+}
+
+.pit-lines-left {
+  top: 116px;
+}
+
+.pit-lines-right {
+  position: absolute;
+  right: 15px;
+  top: 118px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.pit-lines-right span {
+  background: #00ff11;
+  width: 153px;
+}
+
+.pit-lines-right span:last-child {
+  width: 236px;
+}
+
+.pitstop .progress {
+  top: 285px;
+}
+
+.pit-info-top {
+  position: absolute;
+  z-index: 2;
+  top: 270px;
+  left: 270px;
+  width: 960px;
+  padding: 16px 18px;
+  color: white;
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 1.18;
+}
+
+.pit-track {
+  position: absolute;
+  left: 85px;
+  top: 260px;
+  width: 1375px;
+  height: auto;
+}
+
+.pit-info-bottom {
+  position: absolute;
+  z-index: 2;
+  top: 900px;
+  left: 800px;
+  width: 490px;
+  font-size: 18px;
+  line-height: 1.1;
+  letter-spacing: 1px;
+  font-weight: 700;
+  color: white;
+}
+
+/* 05 / Финиш */
+
+.finish {
+  height: 1235px;
+}
+
+.finish-heading {
+  top: 43px;
+}
+
+.finish-heading-lines {
+  position: absolute;
+  top: 81px;
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+}
+
+.finish-heading-lines span {
+  background: black;
+}
+
+.finish-heading-lines.left {
+  left: 34px;
+  align-items: flex-end;
+}
+
+.finish-heading-lines.left span:first-child {
+  width: 260px;
+}
+
+.finish-heading-lines.left span:last-child {
+  width: 210px;
+}
+
+.finish-heading-lines.right {
+  right: 22px;
+}
+
+.finish-heading-lines.right span:first-child {
+  width: 110px;
+}
+
+.finish-heading-lines.right span:last-child {
+  width: 245px;
+}
+
+.finish .progress {
+  top: 264px;
+}
+
+.finish-subtitle {
+  position: absolute;
+  top: 225px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: max-content;
+  text-align: center;
+  font-size: 34px;
+  color: #fd3416;
+  font-weight: bold;
+}
+
+.finish-button {
+  position: absolute;
+  z-index: 3;
+  top: 290px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 414px;
+  background: #00ff11;
+  color: black;
+  padding: 12px 0;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.award {
+  position: absolute;
+  top: 400px;
+  width: 111px;
+  height: 140px;
+  padding-top: 10px;
+  background: #00ff11;
+  color: black;
+  text-align: center;
+  font-size: 105px;
+  font-weight: 800;
+}
+
+.award-left {
+  left: 218px;
+}
+
+.award-right {
+  top: 453px;
+  right: 265px;
+}
+
+.racer {
+  translate: 0 20px;
+  position: absolute;
+  z-index: 2;
+  object-fit: contain;
+  image-rendering: pixelated;
+}
+
+.racer-left {
+  top: 547px;
+  left: 130px;
+  width: 288px;
+  height: 372px;
+}
+
+.racer-middle {
+  top: 369px;
+  left: 601px;
+  width: 288px;
+  height: 372px;
+}
+
+.racer-right {
+  top: 607px;
+  left: 1035px;
+  width: 288px;
+  height: 372px;
+}
+
+.podium-image {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: 1;
+}
+
+/* Шашечка на пьедестале */
+.finish-checkers {
+  position: absolute;
+  bottom: 25px;
+  left: 0;
+  width: 100%;
+  height: 110px;
+  background-image: url("../изображения/chekerboard.svg");
+  background-size: 100% 100%;
+  z-index: 4;
+}
+
+/* Нижний блок сайта */
+
+.finish-footer {
+  background: #000;
+  color: white;
+  min-height: 160px;
+  padding: 30px 50px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Группа и ФИО слева */
+
+.finish-footer-text p {
+  margin: 0;
+  font-family: "Halvar Mittelschrift";
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 1.3;
+}
+
+/* Логотип ВШЭ справа */
+
+.finish-footer-logo {
+  display: block;
+  width: auto;
+  height: 90px;
+  object-fit: contain;
+}

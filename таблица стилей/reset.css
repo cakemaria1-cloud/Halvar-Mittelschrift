@@ -1,0 +1,21 @@
+/* Сброс стандартных отступов браузера. */
+html, body, div, span, h1, h2, h3, p, a, img, b, strong, em, section,
+header, main {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+header, section, main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+* {
+  box-sizing: border-box;
+}

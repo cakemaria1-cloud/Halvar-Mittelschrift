@@ -1,0 +1,83 @@
+@font-face {
+  font-family: "Halvar Mittelschrift";
+  src: url("../шрифты/HalvarMittel-Hl.woff") format("woff");
+  font-style: normal;
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: "Halvar Mittelschrift";
+  src: url("../шрифты/HalvarMittel-XTh.woff") format("woff");
+  font-style: normal;
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: "Halvar Mittelschrift";
+  src: url("../шрифты/HalvarMittel-Th.woff") format("woff");
+  font-style: normal;
+  font-weight: 250;
+}
+
+@font-face {
+  font-family: "Halvar Mittelschrift";
+  src: url("../шрифты/HalvarMittel-Lt.woff") format("woff");
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Halvar Mittelschrift";
+  src: url("../шрифты/HalvarMittel-Rg.woff") format("woff");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Halvar Mittelschrift";
+  src: url("../шрифты/HalvarMittel-Md.woff") format("woff");
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Halvar Mittelschrift";
+  src: url("../шрифты/HalvarMittel-Bd.woff") format("woff");
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Halvar Mittelschrift";
+  src: url("../шрифты/HalvarMittel-Blk.woff") format("woff");
+  font-style: normal;
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: "Halvar Mittelschrift";
+  src: url("../шрифты/HalvarMittel-BlkSlanted.woff") format("woff");
+  font-style: italic;
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: "Halvar Mittelschrift";
+  src: url("../шрифты/HalvarMittel-ThSuSlanted.woff") format("woff");
+  font-style: oblique;
+  font-weight: 250;
+}
+
+@font-face {
+  font-family: "Halvar Mittelschrift";
+  src: url("../шрифты/HalvarMittel-MdSuSlanted.woff") format("woff");
+  font-style: oblique;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Halvar Mittelschrift";
+  src: url("../шрифты/HalvarMittel-BlkSuSlanted.woff2") format("woff2");
+  font-style: oblique;
+  font-weight: 900;
+}
